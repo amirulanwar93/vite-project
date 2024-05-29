@@ -1,17 +1,19 @@
-const Title = () => {
-  const name = "Anwar";
-  const profession = "Civil Engineer";
-
+const Title = (props) => {
+  // const name = "Anwar";
+  // const role = "Civil Engineer";
+  props.meow?.();
   return (
     <div
       style={{
         border: "1px solid black",
         padding: "1rem 2rem",
         borderRadius: "1rem",
+        backgroundColor: "burlywood",
       }}
     >
-      <p>{name}</p>
-      <p>{profession}</p>
+      <p style={{ fontWeight: "bold", fontSize: "1.5rem" }}>{props.name}</p>
+      <p>{props.role}</p>
+      {props.isManager && <p style={{ color: "red" }}>Manager</p>}
     </div>
   );
 };
