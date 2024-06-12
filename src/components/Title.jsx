@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Title = (props) => {
   // const name = "Anwar";
   // const role = "Civil Engineer";

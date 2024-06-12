@@ -1,4 +1,4 @@
-// import Cat from "./components/Cat";
+import Cat from "./components/Cat";
 import Title from "./components/Title";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         role="System Analyst"
         isManager={true}
       />
-      {/* <Cat /> */}
+      <Cat />
     </div>
   );
 }
